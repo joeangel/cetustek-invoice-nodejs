@@ -1,0 +1,10 @@
+.vscode
+.history
+node_modules
+/coverage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+[._]*.sw[a-p]
+.env
+build

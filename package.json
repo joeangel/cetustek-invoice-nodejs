@@ -1,0 +1,80 @@
+{
+  "name": "cetustek-invoice-nodejs",
+  "description": "Module for Cetustek Invoice API",
+  "version": "0.1.0",
+  "author": "Joe Angel",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joeangel/cetustek-invoice-nodejs.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cetustek",
+    "invoice"
+  ],
+  "dependencies": {
+    "open-location-code-typescript": "^1.5.0"
+  },
+  "scripts": {
+    "build-clean": "rimraf ./es/*",
+    "build-lint": "tslint --project ./tsconfig.json",
+    "build-compile": "tsc",
+    "build-watch": "tsc --watch",
+    "build": "run-s build-clean build-lint build-compile",
+    "test": "jest",
+    "umd": "rollup --config rollup.config.js",
+    "umd-min": "rollup --config rollup.config.js --environment MINIFY:true",
+    "dist-clean": "rimraf ./dist/* ./typings/*",
+    "typings": "tsc --emitDeclarationOnly --declaration true --declarationDir typings",
+    "docs": "jsdoc2md --no-cache --files ./es/**/*.js > ./docs/api.md",
+    "dist": "run-s dist-clean build test umd umd-min typings docs"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.9",
+    "cross-env": "^7.0.2",
+    "jest": "^26.0.1",
+    "jsdoc-to-markdown": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.12.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "ts-jest": "^26.1.0",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "^3.9.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "testRegex": "./test/.*.spec.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "collectCoverage": true
+  },
+  "main": "dist/cetustek-invoice-nodejs.js",
+  "module": "es/cetustek-invoice-nodejs.js",
+  "typings": "typings/cetustek-invoice-nodejs.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src",
+    "typings"
+  ]
+}
