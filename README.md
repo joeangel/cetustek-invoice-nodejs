@@ -21,7 +21,7 @@
 
 Cetustek Invoice NodeJS (CIN) is a module/example for calling Cetustek Invoice APIs with NodeJS, which allows you to call the APIs by the mudule.
 
-CIN references from [IOTA/IAC](https://github.com/joeangel/cetustek-invoice-nodejs) repo.
+CIN code base reference from [IOTA/IAC](https://github.com/iotaledger/iota-area-codes) repo.
 
 See a more please contact [Cetustek](https://www.cetustek.com.tw/).
 
