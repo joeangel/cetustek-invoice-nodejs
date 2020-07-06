@@ -22,7 +22,7 @@ export default {
         "open-location-code-typescript"
     ],
     output: {
-        file: `dist/iota-area-codes${process.env.MINIFY ? '.min' : ''}.js`,
+        file: `dist/cetustek-invoice-nodejs${process.env.MINIFY ? '.min' : ''}.js`,
         format: 'umd',
         name: 'IotaAreaCodes',
         compact: process.env.MINIFY
