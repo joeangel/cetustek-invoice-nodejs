@@ -76,5 +76,13 @@
     "es",
     "src",
     "typings"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/joeangel/cetustek-invoice-nodejs/issues"
+  },
+  "homepage": "https://github.com/joeangel/cetustek-invoice-nodejs#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
 }
