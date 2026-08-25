@@ -7,9 +7,12 @@
 > fixed string `"ok"`. No security updates, bug fixes, compatibility support,
 > or Cetustek API conformance are provided.
 
-The npm package remains available only to avoid unexpectedly breaking existing
-installations. All published versions are deprecated, and this repository is
-preserved as a read-only historical record.
+The npm package remains available to avoid unexpectedly breaking existing
+installations. As of August 25, 2026, its published versions have not been
+marked as deprecated in the npm registry, and this GitHub repository has not
+been archived. Those lifecycle actions are paused while the package's low-volume
+download activity is reviewed. This project is nevertheless no longer
+maintained, and the package must not be treated as a working Cetustek client.
 
 ## Why this project was created
 
