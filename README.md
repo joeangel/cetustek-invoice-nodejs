@@ -1,4 +1,57 @@
-<h2 align="center">Cetustek Invoice NodeJS</h2>
+# Deprecated: Cetustek Invoice NodeJS
+
+> [!WARNING]
+> This project is no longer maintained and must not be used as a production
+> Cetustek client. The published package does not implement an actual API call:
+> its `create()` function ignores the supplied invoice data and returns the
+> fixed string `"ok"`. No security updates, bug fixes, compatibility support,
+> or Cetustek API conformance are provided.
+
+The npm package remains available only to avoid unexpectedly breaking existing
+installations. All published versions are deprecated, and this repository is
+preserved as a read-only historical record.
+
+## Why this project was created
+
+According to the project owner, this repository was started in 2020 because
+Cetustek did not provide a public Node.js package at the time. The goal was to
+make Cetustek electronic-invoice integration easier for Node.js applications.
+The repository established an npm package, TypeScript source layout, build
+pipeline, and usage example, but the actual Cetustek integration was never
+completed.
+
+## Official SDK status checked in 2026
+
+As of August 25, 2026, Cetustek's public website still advertises full API
+integration, including POS, app, ERP, kiosk, and vending-machine scenarios.
+However, a review of Cetustek's public website, the public npm registry, and
+public GitHub repositories did not find a Node.js package identified as an
+official Cetustek SDK:
+
+- [Cetustek electronic-invoice service overview](https://invoice.cetustek.com.tw/Invoice/intro.jsp)
+- [Cetustek MIG 4.1 support notice](https://www.cetustek.com.tw/news418)
+- [Public npm search for `cetustek`](https://www.npmjs.com/search?q=cetustek)
+- [Public GitHub repository search for `cetustek`](https://github.com/search?q=cetustek&type=repositories)
+
+This finding is limited to publicly discoverable sources. Cetustek may provide
+customer-only API documentation, examples, or integration support that is not
+published as a public Node.js SDK. Third-party Cetustek libraries also exist,
+but they are not identified here as official or drop-in replacements.
+
+## Future direction
+
+There is no successor Node.js package planned at this time. A new implementation
+should be considered as a separate project only when there is a verified user
+need, current Cetustek API documentation, sandbox access, integration tests, and
+a clearly accountable maintainer. It should not be built by extending the
+placeholder implementation in this repository.
+
+The content below is retained unchanged as historical documentation. Its usage
+example does not represent working Cetustek integration.
+
+---
+
+<h2 align="center">Cetustek Invoice NodeJS (Historical)</h2>
 
 <p align="center">
   <a href="https:///" style="text-decoration:none;"><img src="https://img.shields.io/badge/chat-on%20Telegram-0088cc.svg" alt="Telegram"></a>
